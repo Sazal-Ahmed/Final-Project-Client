@@ -14,6 +14,7 @@ import { Rating } from '@smastrom/react-rating'
 
 import '@smastrom/react-rating/style.css'
 
+
 const Testimonials = () => {
 
     const [reviews, setReviews] = useState([]);
@@ -41,6 +42,7 @@ const Testimonials = () => {
                                 value={review.rating}
                                 readOnly
                             />
+                           
                             <p className="p-8">{review.details}</p>
                             <h3 className="text-2xl text-orange-400">{review.name}</h3>
                         </div>
