@@ -12,7 +12,7 @@ import useMenu from '../../hooks/useMenu';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import MenuCategory from './MenuCategory/MenuCategory';
 const Menu = () => {
-
+    
     const[menu] = useMenu();
     const dessert = menu.filter(item => item.category === 'dessert');
     const salad = menu.filter(item => item.category === 'salad');
@@ -30,9 +30,9 @@ const Menu = () => {
             <SectionTitle subheadings={'Don not Miss'} heading={"Todays Offer"}></SectionTitle>
             <MenuCategory items={offered}></MenuCategory>
             <MenuCategory items={dessert} title="dessert" coverImg={dessertImg} ></MenuCategory>
-            <MenuCategory items={pizza} title="Pizza" coverImg={pizzaImg} ></MenuCategory>
-            <MenuCategory items={salad} title="Salad" coverImg={saladImg} ></MenuCategory>
-            <MenuCategory items={soup} title="Soup" coverImg={soupImg} ></MenuCategory>
+            <MenuCategory items={pizza} title="pizza" coverImg={pizzaImg} ></MenuCategory>
+            <MenuCategory items={salad} title="salad" coverImg={saladImg} ></MenuCategory>
+            <MenuCategory items={soup} title="soup" coverImg={soupImg} ></MenuCategory>
         </div>
     );
 };

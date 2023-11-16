@@ -1,6 +1,7 @@
 
 import Menuitem from '../../shared/MenuItem/Menuitem';
 import Cover from '../../shared/Cover/Cover';
+import { Link } from 'react-router-dom';
 
 const MenuCategory = ({items, title, coverImg}) => {
     return (
@@ -13,6 +14,7 @@ const MenuCategory = ({items, title, coverImg}) => {
                     items?.map(item =><Menuitem key={item._id} item={item}></Menuitem>)
                 }
             </div>
+            <Link to={`/order/${title}`}> <button className="btn btn-outline border-0 border-b-4 mt-4 text-sky-600 btn-info">Order Now</button></Link>
         </div>
     );
 };
